@@ -8,7 +8,7 @@ export class AppearCommand implements ISlashCommand {
     public paramsExample: string = 'room_name';
     public i18nDescription: string = 'Slash_Appear_Description';
 
-    public executor(context: SlashCommandContext, read: IRead, modify: IModify, http: IHttp): void {
+    public async executor(context: SlashCommandContext, read: IRead, modify: IModify, http: IHttp): Promise<void> {
 
         let roomName = '';
         if ( context.getArguments().join(' ').length === 0 ) {
@@ -21,6 +21,6 @@ export class AppearCommand implements ISlashCommand {
             .setSender(context.getSender()).setRoom(context.getRoom())
             .setText('https://appear.in/' + roomName);
 
-        modify.getCreator().finish(builder);
+        await modify.getCreator().finish(builder);
     }
 }
