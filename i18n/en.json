@@ -1,0 +1,4 @@
+{
+    "Enable_Appear_Command": "Enable the Appear Command",
+    "Enable_Appear_Command_Description": "Whether or not the `/appear` command should be enabled."
+}

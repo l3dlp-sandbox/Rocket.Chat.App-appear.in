@@ -1,0 +1,15 @@
+{
+    "id": "6d134d6e-9d32-4495-9f44-2ef6b4db48a9",
+    "name": "Appear.in Command",
+    "nameSlug": "appearin-command",
+    "description": "Provides appear.in channel link creation.",
+    "version": "1.0.0",
+    "requiredApiVersion": ">=0.6.1",
+    "author": {
+        "name": "Kai Alexander Fischer",
+        "homepage": "https://github.com/kaiiiiiiiii/",
+        "support": "https://github.com/kaiiiiiiiii/"
+    },
+    "classFile": "AppearCommandApp.ts",
+    "iconFile": "icon.png"
+}
