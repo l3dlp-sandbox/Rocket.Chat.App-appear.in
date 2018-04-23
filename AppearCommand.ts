@@ -5,7 +5,7 @@ export class AppearCommand implements ISlashCommand {
     public static CommandName = 'appear';
 
     public command: string = AppearCommand.CommandName;
-    public paramsExample: string = 'appear_room_name';
+    public paramsExample: string = 'room_name';
     public i18nDescription: string = 'Slash_Appear_Description';
 
     public executor(context: SlashCommandContext, read: IRead, modify: IModify, http: IHttp): void {
