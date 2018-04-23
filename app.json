@@ -3,8 +3,8 @@
     "name": "Appear.in Command",
     "nameSlug": "appearin-command",
     "description": "Provides appear.in room link creation via slash command.",
-    "version": "1.0.0",
-    "requiredApiVersion": ">=0.6.1",
+    "version": "1.0.1",
+    "requiredApiVersion": ">=0.9.6",
     "author": {
         "name": "Kai Alexander Fischer",
         "homepage": "https://github.com/kaiiiiiiiii/AppearCommandApp",

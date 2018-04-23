@@ -13,20 +13,20 @@ import { ISetting, SettingType } from '@rocket.chat/apps-ts-definition/settings'
 export class AppearCommandApp extends App {
     private appearId = 'appear_cmd';
 
-    public onEnable(environmentRead: IEnvironmentRead, configModify: IConfigurationModify): boolean {
+    public async onEnable(environmentRead: IEnvironmentRead, configModify: IConfigurationModify): Promise<boolean> {
         const sets = environmentRead.getSettings();
 
-        this.enableOrDisableCommand(this.appearId, sets.getValueById(this.appearId), configModify);
+        this.enableOrDisableCommand(this.appearId, await sets.getValueById(this.appearId), configModify);
 
         return true;
     }
 
-    public onSettingUpdated(setting: ISetting, configModify: IConfigurationModify, read: IRead, http: IHttp): void {
-        this.enableOrDisableCommand(setting.id, setting.value as boolean, configModify);
+    public async onSettingUpdated(setting: ISetting, configModify: IConfigurationModify, read: IRead, http: IHttp): Promise<void> {
+        await this.enableOrDisableCommand(setting.id, setting.value as boolean, configModify);
     }
 
-    protected extendConfiguration(configuration: IConfigurationExtend): void {
-        configuration.settings.provideSetting({
+    protected async extendConfiguration(configuration: IConfigurationExtend): Promise<void> {
+        await configuration.settings.provideSetting({
             id: this.appearId,
             type: SettingType.BOOLEAN,
             packageValue: true,
@@ -36,17 +36,16 @@ export class AppearCommandApp extends App {
             i18nDescription: 'Enable_Appear_Command_Description',
         });
 
-        configuration.slashCommands.provideSlashCommand(new AppearCommand());
-
+        await configuration.slashCommands.provideSlashCommand(new AppearCommand());
     }
 
-    private enableOrDisableCommand(id: string, doEnable: boolean, configModify: IConfigurationModify): void {
+    private async enableOrDisableCommand(id: string, doEnable: boolean, configModify: IConfigurationModify): Promise<void> {
         switch (id) {
             case this.appearId:
                 if (doEnable) {
-                    configModify.slashCommands.enableSlashCommand(AppearCommand.CommandName);
+                    await configModify.slashCommands.enableSlashCommand(AppearCommand.CommandName);
                 } else {
-                    configModify.slashCommands.disableSlashCommand(AppearCommand.CommandName);
+                    await configModify.slashCommands.disableSlashCommand(AppearCommand.CommandName);
                 }
                 return;
         }
