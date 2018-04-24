@@ -1,4 +1,9 @@
 {
+    "Avatar": "Avatar",
+    "Avatar_Description": "You can override the avatar used to post from this app.",
     "Enable_Appear_Command": "Enable the Appear Command",
-    "Enable_Appear_Command_Description": "Whether or not the `/appear` command should be enabled."
+    "Enable_Appear_Command_Description": "Whether or not the `/appear` command should be enabled.",
+    "Slash_Appear_Description": "Launch an Appear.in video conference.",
+    "Username": "Username",
+    "Username_Description": "Choose the username that this app will post as."
 }

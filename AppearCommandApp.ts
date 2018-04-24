@@ -36,6 +36,26 @@ export class AppearCommandApp extends App {
             i18nDescription: 'Enable_Appear_Command_Description',
         });
 
+        await configuration.settings.provideSetting({
+            id: 'appear_username',
+            type: SettingType.STRING,
+            packageValue: 'Appear.in',
+            required: true,
+            public: true,
+            i18nLabel: 'Username',
+            i18nDescription: 'Username_Description',
+        });
+
+        await configuration.settings.provideSetting({
+            id: 'appear_avatar',
+            type: SettingType.STRING,
+            packageValue: 'https://raw.githubusercontent.com/kaiiiiiiiii/AppearCommandApp/master/icon.png',
+            required: true,
+            public: true,
+            i18nLabel: 'Avatar',
+            i18nDescription: 'Avatar_Description',
+        });
+
         await configuration.slashCommands.provideSlashCommand(new AppearCommand());
     }
 
