@@ -1,6 +1,9 @@
 {
     "Avatar": "Avatar",
-    "Avatar_Description": "You can override the avatar used to post from this app.",
+    "Avatar_Description": "Override the apps avatar link.",
+    "Custom_Room_Name": "custom room name",
+    "Default_Room": "Default Room",
+    "Default_Room_Description": "Will be used if no room name is provided.",
     "Enable_Appear_Command": "Enable the Appear Command",
     "Enable_Appear_Command_Description": "Whether or not the `/appear` command should be enabled.",
     "Slash_Appear_Description": "Launch an Appear.in video conference.",

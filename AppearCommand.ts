@@ -9,9 +9,10 @@ export class AppearCommand implements ISlashCommand {
     public i18nDescription: string = 'Slash_Appear_Description';
 
     public async executor(context: SlashCommandContext, read: IRead, modify: IModify, http: IHttp): Promise<void> {
+        const defaultRoom = await read.getEnvironmentReader().getSettings().getValueById('appear_default_room');
         const username = await read.getEnvironmentReader().getSettings().getValueById('appear_username');
         const avatar = await read.getEnvironmentReader().getSettings().getValueById('appear_avatar');
-        const roomName = context.getArguments()[0] || Math.random().toString(36).slice(-8);
+        const roomName = (context.getArguments()[0] || defaultRoom) || Math.random().toString(36).slice(-8);
 
         const text = `@${context.getSender().username} has started a video conference in room: [${roomName}](https://appear.in/${roomName})`;
 

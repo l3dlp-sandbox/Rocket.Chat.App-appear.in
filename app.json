@@ -3,7 +3,7 @@
     "name": "Appear.in Command",
     "nameSlug": "appearin-command",
     "description": "Allows you to create Appear.in conference invitations using a slash command.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "requiredApiVersion": ">=0.9.6",
     "author": {
         "name": "Kai Alexander Fischer",

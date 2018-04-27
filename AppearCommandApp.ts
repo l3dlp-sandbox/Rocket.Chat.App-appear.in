@@ -37,6 +37,16 @@ export class AppearCommandApp extends App {
         });
 
         await configuration.settings.provideSetting({
+            id: 'appear_default_room',
+            type: SettingType.STRING,
+            packageValue: '',
+            required: true,
+            public: true,
+            i18nLabel: 'Default_Room',
+            i18nDescription: 'Default_Room_Description',
+        });
+
+        await configuration.settings.provideSetting({
             id: 'appear_username',
             type: SettingType.STRING,
             packageValue: 'Appear.in',

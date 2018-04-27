@@ -14,6 +14,14 @@ Basicly there's just one command.
 *A random room name will be used if non is provided.*
 
 
+### Options
+
+| Name | Description | Default value |
+| :---- |:-------------| :------ |
+| Default Room | Will be used if no room name is specified | - |
+| Username | Choose the username that this app will post as. | Appear.in |
+| Avatar | Override the apps avatar link | https://raw.githubusercontent.com/kaiiiiiiiii/AppearCommandApp/master/icon.png |
+
 ### Links
 
 - [Appear.in](https://appear.in/)
