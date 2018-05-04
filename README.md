@@ -16,7 +16,7 @@ Basicly there's just one command.
 
 | Name | Description | Default value |
 | :---- |:-------------| :------ |
-| Default Room | Will be used if no room name is specified | - |
+| Default Room | Will be used if no room name is provided by user | - |
 | Username | Choose the username that this app will post as. | Appear.in |
 | Avatar | Override the apps avatar link | https://raw.githubusercontent.com/kaiiiiiiiii/AppearCommandApp/master/icon.png |
 
