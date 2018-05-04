@@ -1,7 +1,5 @@
 # AppearCommandApp
 
-**App is still work-in-progress, as the notifyRoom function is not fully implemented yet.**
-
 AppearCommandApp is a Rocket.Chat App that allows you to create Appear.in conference invitations using a slash command.
 
 
