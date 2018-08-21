@@ -1,12 +1,12 @@
 {
-    "Avatar": "Avatar",
-    "Avatar_Description": "Override the apps avatar link.",
-    "Custom_Room_Name": "custom room name",
-    "Default_Room": "Default Room",
-    "Default_Room_Description": "Will be used if no room name is provided.",
-    "Enable_Appear_Command": "Enable the Appear Command",
-    "Enable_Appear_Command_Description": "Whether or not the `/appear` command should be enabled.",
-    "Slash_Appear_Description": "Launch an Appear.in video conference.",
-    "Username": "Username",
-    "Username_Description": "Choose the username that this app will post as."
+    "AppearIn_Bot": "The bot user that will represent appear.in",
+    "AppearIn_Bot_Description": "Create a bot user and type his username here.",
+    "Customize_Icon": "Customize Icon",
+    "Customize_Icon_Description": "Change the icon that is used for messages from this integration.",
+    "Customize_Name": "Customize Name",
+    "Customize_Name_Description": "Choose the username that this integration will post as.",
+    "Enable_AppearIn_Command": "Enable appear.in command",
+    "Enable_AppearIn_Command_Description": "Whether or not the `/appear` command should be enabled.",
+    "Slash_Command_Description": "Launch an appear.in video conference from a channel.",
+    "Slash_Command_Params_Example": "[custom room name]"
 }

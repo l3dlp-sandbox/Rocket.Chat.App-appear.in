@@ -1,6 +1,6 @@
-# AppearCommandApp
+# Rocket.Chat.Appear.in
 
-AppearCommandApp is a Rocket.Chat App that allows you to create Appear.in conference invitations using a slash command.
+Appear.in App for Rocket.Chat - create video conference links directly in your channel
 
 
 ### Commands
@@ -12,15 +12,7 @@ Basicly there's just one command.
 *A random room name will be used if non is provided.*
 
 
-### Options
-
-| Name | Description | Default value |
-| :---- |:-------------| :------ |
-| Default Room | Will be used if no room name is provided by user | - |
-| Username | Choose the username that this app will post as. | Appear.in |
-| Avatar | Override the apps avatar link | https://raw.githubusercontent.com/kaiiiiiiiii/AppearCommandApp/master/icon.png |
-
 ### Links
 
 - [Appear.in](https://appear.in/)
-- [Rocket.Chat.Apps-dev-environment](https://github.com/RocketChat/Rocket.Chat.Apps-dev-environment)
+- [Rocket.Chat.Apps-cli](https://github.com/RocketChat/Rocket.Chat.Apps-cli)

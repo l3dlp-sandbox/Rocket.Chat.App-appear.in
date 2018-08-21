@@ -1,15 +1,15 @@
 {
-    "id": "6d134d6e-9d32-4495-9f44-2ef6b4db48a9",
-    "name": "Appear.in Command",
-    "nameSlug": "appearin-command",
-    "description": "Allows you to create Appear.in conference invitations using a slash command.",
-    "version": "1.1.0",
-    "requiredApiVersion": ">=0.9.6",
+    "id": "4e28f03b-054b-4ce3-9573-fd8a6bcbecf6",
+    "version": "1.2.0",
+    "requiredApiVersion": "^0.9.13",
+    "iconFile": "icon.png",
     "author": {
         "name": "Kai Alexander Fischer",
         "homepage": "https://github.com/kaiiiiiiiii",
         "support": "https://github.com/kaiiiiiiiii/AppearCommandApp/issues"
     },
-    "classFile": "AppearCommandApp.ts",
-    "iconFile": "icon.png"
+    "name": "appear.in",
+    "nameSlug": "appearin",
+    "classFile": "AppearInApp.ts",
+    "description": "appear.in provides a simple one-click video conference solution right in your browser. This integration lets you and others use the /appear slash command to start a video conference, making it super easy for others to join the call."
 }
