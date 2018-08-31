@@ -1,14 +1,13 @@
 import {
     IConfigurationExtend, IEnvironmentRead, ILogger,
-} from '@rocket.chat/apps-ts-definition/accessors';
-import { App } from '@rocket.chat/apps-ts-definition/App';
-import { IAppInfo } from '@rocket.chat/apps-ts-definition/metadata';
-import { SettingType } from '@rocket.chat/apps-ts-definition/settings';
+} from '@rocket.chat/apps-engine/definition/accessors';
+import { App } from '@rocket.chat/apps-engine/definition/App';
+import { IAppInfo } from '@rocket.chat/apps-engine/definition/metadata';
+import { SettingType } from '@rocket.chat/apps-engine/definition/settings';
 
-import { AppearInCommand } from './AppearInCommand';
+import { AppearInCommand } from './commands/AppearInCommand';
 
 export class AppearInApp extends App {
-    private id = 'appearin';
 
     constructor(info: IAppInfo, logger: ILogger) {
         super(info, logger);
@@ -31,14 +30,14 @@ export class AppearInApp extends App {
         //     packageValue: 'rocket.cat',
         //     required: true,
         //     public: false,
-        //     i18nLabel: 'AppearIn_Bot',
-        //     i18nDescription: 'AppearIn_Bot_Description',
+        //     i18nLabel: 'Bot',
+        //     i18nDescription: 'Bot_Description',
         // });
 
         await configuration.settings.provideSetting({
             id: 'appearin_icon',
             type: SettingType.STRING,
-            packageValue: 'https://raw.githubusercontent.com/kaiiiiiiiii/AppearCommandApp/master/icon.png',
+            packageValue: 'https://raw.githubusercontent.com/kaiiiiiiiii/Rocket.Chat.App-Appear.in/master/icon.png',
             required: true,
             public: false,
             i18nLabel: 'Customize_Icon',

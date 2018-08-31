@@ -1,7 +1,8 @@
-# Rocket.Chat.Appear.in
+# Rocket.Chat.App-appear.in
 
-Appear.in App for Rocket.Chat - create video conference links directly in your channel
+appear.in provides a simple one-click video conference solution right in your browser. This integration lets you and others use the /appear slash command to start a video conference, making it super easy for others to join the call.
 
+![](assets/details.png)
 
 ### Commands
 
@@ -11,8 +12,10 @@ Basicly there's just one command.
 
 *A random room name will be used if non is provided.*
 
+![](assets/message.png)
 
 ### Links
 
 - [Appear.in](https://appear.in/)
-- [Rocket.Chat.Apps-cli](https://github.com/RocketChat/Rocket.Chat.Apps-cli)
+- [Rocket.Chat](https://rocket.chat/)
+- [Rocket.Chat.Apps-cli](https://github.com/RocketChat/Rocket.Chat.Apps-cli/)
